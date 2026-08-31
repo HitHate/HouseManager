@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <!-- 音乐播放器  css-->
+  <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet" />
+  <title>
+    房屋出租系统
+  </title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <!-- 音乐播放器 -->
+  <!-- <div id="aplayer"></div> -->
+</body>
+
+</html>
+<!-- 音乐播放器 js-->
+<script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+<!-- <script>
+
+  const vm = new Vue({
+    el: '#aplayer',
+    created() {
+      this.getdata()
+      console.log("vue.js")
+    },
+    methods: {
+      getdata() {
+        axios.get('/api/music').then(result => {
+          console.log(result.data)
+          var ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            mini: true,
+            fixed: true,
+            order: 'random',
+            audio: result.data.data,
+          })
+          ap.play()
+        })
+      }
+    }
+  })
+</script>  -->
